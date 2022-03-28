@@ -1,0 +1,13 @@
+main figure{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+main figure img{
+    margin: 5px;
+}
+main figure .doge-tablet{
+    display: block;
+    width: 200px;
+    height: 200px;
+}

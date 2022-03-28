@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    animation-name: disco;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+header img{
+    width: 30px; 
+    height:30px;
+    border-radius: 50%;
+}
+header h1{
+    font-size: 1.8rem;
+    color: white;
+}
+main {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+}
+main figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main figure .doge-destok, main figure .doge-tablet{
+    display: none;
+}
+#volume {
+    font-size: 40px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+main p{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: white;
+}
+.hidden {
+    display: none;
+}
+@keyframes disco {
+    0% {
+        background: #ff7c7c;
+    }
+    20% {
+        background: #7c9bff;
+    }
+    30% {
+        background: #7cffd3;
+    }
+    40% {
+        background: #ff7cae;
+    }
+    50% {
+        background: #fff67c;
+    }
+    60% {
+        background: #7cff82;
+    }
+    70% {
+        background: #7c9bff;
+    }
+    80% {
+        background: #ffc67c;
+    }
+    90% {
+        background: #7c89ff;
+    }
+    100% {
+        background: #7ccbff;
+    }
+}
