@@ -106,9 +106,23 @@ main .carousel img{
 }
 #Portafolio .card{
     margin: 0 auto;
+    color: black;
+}
+#Portafolio .card img{
+    border: 2px solid white;
+    border-radius: 4px;
+}
+#Portafolio .card-title{
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
 #Portafolio .card-body{
     padding: 0;
+    text-align: justify;
 }
 #Portafolio .card-body .card-title{
     padding: 10px 10px 0px 10px;
