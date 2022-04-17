@@ -7,14 +7,24 @@ html{
     font-size: 62.5%;
 }
 body{
+    font-family: 'Lora', serif;
     display: flex;
     flex-direction: column;
 }
 h1{
     font-size: 4rem;
 }
+h2{
+    font-size: 3.2rem;
+}
+h5{
+    font-size: 2rem;
+}
 p{
     font-size: 1.6rem;
+}
+small{
+    font-size: 1.4rem;
 }
 .btn{
     font-size: 1.6rem;
@@ -43,7 +53,7 @@ main .carousel img{
 #Carousel{
     position: relative;
 }
-.overlay{
+#Carousel .overlay{
     z-index: 1; 
     position: absolute;
     top: 0;
@@ -52,6 +62,30 @@ main .carousel img{
     left: 0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+}
+#Carousel .overlay p{
+    font-size: 1.8rem;
+}
+#Portafolio{
+    padding-bottom: 50px;
+}
+#Portafolio .card{
+    margin: 0 auto;
+}
+#Portafolio .card-body{
+    padding: 0;
+}
+#Portafolio .card-body .card-title{
+    padding: 10px 10px 0px 10px;
+}
+#Portafolio .card-body .card-text{
+    padding: 0 10px;
+}
+#Portafolio .card-body .card-body{
+    padding-bottom: 10px;
+}
+.badge{
+    font-size: 1.2rem;
 }
 main #DogeDancing{
     width: 100%;
@@ -69,21 +103,21 @@ main #DogeDancing{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-main figure{
+main #DogeDancing figure{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-main figure .doge-destok, main figure .doge-tablet{
+main #DogeDancing figure .doge-destok, main figure .doge-tablet{
     display: none;
 }
-#volume {
+#DogeDancing #volume {
     font-size: 40px;
     margin-top: 10px;
     color: white;
     cursor: pointer;
 }
-main p{
+main #DogeDancing p{
     font-size: 1.4rem;
     line-height: 1.4rem;
     color: white;
