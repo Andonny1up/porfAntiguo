@@ -38,6 +38,10 @@ header{
 .navbar-brand{
     font-size: 2rem;
 }
+.navbar .navbar-nav .text-resaltar{
+    color: #00c6fb ;
+    font-weight: bold;
+}
 header .navbar-brand img{
     width: 30px; 
     height:30px;
