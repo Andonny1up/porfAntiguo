@@ -1,3 +1,6 @@
+#Portafolio .card-portafolio{
+    max-width: 500px;
+}
 main #DogeDancing figure{
     display: flex;
     flex-wrap: wrap;

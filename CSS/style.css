@@ -108,6 +108,9 @@ main .carousel img{
     margin: 0 auto;
     color: black;
 }
+#Portafolio .card-portafolio{
+    max-width: 350px;
+}
 #Portafolio .card img{
     border: 2px solid white;
     border-radius: 4px;
@@ -122,12 +125,13 @@ main .carousel img{
 }
 #Portafolio .card-body{
     padding: 0;
-    text-align: justify;
+    text-align: center;
 }
 #Portafolio .card-body .card-title{
     padding: 10px 10px 0px 10px;
 }
 #Portafolio .card-body .card-text{
+    height: 120px;
     padding: 0 10px;
 }
 #Portafolio .card-body .card-body{
