@@ -1,42 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dancin Doge</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Iconos Fontawesome -->
     <script src="https://kit.fontawesome.com/bbff992efd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/tablet.css" media="(min-width: 800px)">
+    <link rel="stylesheet" href="./CSS/tablet.css" media="(min-width: 768px)">
     <link rel="stylesheet" href="./CSS/destok.css" media="(min-width: 1000px)">
-    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- <link rel="shortcut icon" href="./favicon-16x16.png" type="image/png"> -->
+    <title>Andonny1up</title>
 </head>
 <body>
     <header>
-        <img src="https://avatars.githubusercontent.com/u/100707554?v=4" alt="Logo">
-        <h1>Andonny1up.github.io</h1>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="https://avatars.githubusercontent.com/u/100707554?v=4" alt=""> Andonny1up
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAndonny" aria-controls="navbarAndonny" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarAndonny">
+                <ul class="navbar-nav text-center ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Carousel">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#SobreMi">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Portafolio">Portafolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-resaltar" href="#DogeDancing">Dancing doge</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>  
     <main>
-        <figure>
-            <img src="./resources/dancing-doge.gif" alt="Doge bailando" width="200px">
-            <img class="doge-tablet" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
-            <img class="doge-tablet" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
-            <img class="doge-tablet" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
-            <img class="doge-destok" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
-            <img class="doge-destok" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
-        </figure>
-        <audio id="dancin-doge" src="./resources/dacin.mp3"></audio>
-        <span id="volume">
-            <i class="fas fa-volume-up hidden"></i>
-            <i class="fas fa-volume-mute"></i>
-        </span>
-        <p>Toca el icono de sonido</p>
-        <p>Aquí estara mi protafolio muy pronto.</p>
-        <script src="./JavaScript/script.js"></script>
+        <section id="Carousel">
+            <div id="carouselPortada" class="carousel slide" data-bs-ride="carousel" data-bs-pause=“false”>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <!-- Por ahora no tengo imagenes para utilizar aqui haci que dejare estas -->
+                  <div class="carousel-item active">
+                    <img src="./resources/img/KNB-wild-3.jpg" class="d-block w-100" alt="Foto numero uno del carusel">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./resources/img/KNB-wild-2.jpg" class="d-block w-100" alt="Foto numero dos del carusel">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./resources/img/KNB-wild-1.jpg" class="d-block w-100" alt="Foto numero tres del carusel">
+                  </div>
+                </div>
+              </div>
+              <div class="overlay">
+                <div class="container h-100">
+                  <div class="row align-items-center h-100">
+                    <div class="col-md-6 offset-md-6 text-center text-md-end">
+                      <h1>Andonny1up</h1>
+                      <p class="d-none d-md-block">
+                        Bienvenidos a mi espacio en la web, donde comparto diferentes proyectos que he hido realizando
+                        a lo largo de mis dias que pase estudiando para convertirme en un desarrollador 
+                      </p>
+                      <a href="#Portafolio" class="btn btn-outline-light">Portafolio</a>
+                      <button type="button" class="btn btn-Andoni">Contactame</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="SobreMi">
+          <div class="container pt-5 pb-5">
+            <div class="row">
+              <div class="col-lg-6 text-center">
+                <hr/>
+                <p>
+                  Me llamo Andoni Barba Noe, soy estudiante universitario en ingeniería de sistemas.
+                  
+                </p>
+                <p>
+                  Me encanta aprender sobre diferentes tecnologias porque quiero ser un excelente desarrollador.
+                </p>
+                <hr/>
+              </div>
+              <div class="col-lg-6 div-img">
+                <img src="./resources/img/Perfil.png" alt="Foto de Andoni Barba Noe">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Portafolio -->
+        <section id="Portafolio" class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center text-uppercase">
+                        <small>Mira mi</small>
+                        <h2>Portafolio</h2>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6 pb-2">
+                        <div class="card mb-3 card-portafolio">
+                            <div class="row g-0">
+                              <div class="col-md-6">
+                                    <img src="./resources/portafolio/Batatabit.png" class="img-fluid rounded-start h-100 w-100" alt="Foto de la pagina Batatabit">
+                              </div>
+                              <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">BatataBit</h5>
+                                    <div class="badges text-end">
+                                        <span class="badge bg-danger me-1">Html</span>
+                                        <span class="badge bg-primary me-2">Css</span>
+                                    </div>
+                                    <p class="card-text">BatataBit es la plantilla de una pagina exchange de criptomonedas realizado con html y css aplicando la metodologia Mobile-First.</p>
+                                    <div class="card-body text-center">
+                                        <a href="https://andonny1up.github.io/Batatabit/" target="_blank" class="btn btn-primary"> <small>Ver más</small></a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6 pb-2">
+                      <div class="card mb-3 card-portafolio">
+                          <div class="row g-0">
+                            <div class="col-md-6">
+                                  <img src="./resources/portafolio/Platzi-Conf.png" class="img-fluid rounded-start h-100 w-100" alt="Foto de la pagina Plazi conf">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="card-body">
+                                  <h5 class="card-title">Platzi Conf Hawaii</h5>
+                                  <div class="badges text-end">
+                                      <span class="badge bg-secondary me-2">Bootstrap</span>
+                                  </div>
+                                  <p class="card-text">Esta es mi version de la pagina de Platzi conf Hawaii que realize al Aprender sobre Bootstrap 4 y 5.</p>
+                                  <div class="card-body text-center">
+                                      <a href="https://andonny1up.github.io/webBootstrap/" target="_blank" class="btn btn-primary"> <small>Ver más</small></a>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6 offset-sm-3 col-md-12 offset-md-0 pb-2">
+                    <div class="card mb-3 card-portafolio">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                                <img src="./resources/dancing-doge.gif" class="img-fluid rounded-start h-100 w-100" alt="Perro Bailando">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Dancing Doge</h5>
+                                <div class="badges text-end">
+                                    <span class="badge bg-danger me-1">Html</span>
+                                    <span class="badge bg-primary me-1">Css</span>
+                                    <span class="badge bg-warning me-2">JavaScript</span>
+                                </div>
+                                <p class="card-text">Es la pagina inicial que habia antes de mi portafolio, inspirada en la pagina de RetaxMaster y ahora esta justo debajo en la siguiente seccion.</p>
+                                <div class="card-body text-center">
+                                    <a href="#DogeDancing" class="btn btn-primary"> <small>Ver más</small></a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <hr/>
+            </div>
+        </section>
+        <!-- Portafolio -->
+        <section id="DogeDancing">
+            <figure>
+                <img src="./resources/dancing-doge.gif" alt="Doge bailando" width="200px">
+                <img class="doge-tablet" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
+                <img class="doge-tablet" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
+                <img class="doge-tablet" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
+                <img class="doge-destok" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
+                <img class="doge-destok" src="./resources/dancing-doge.gif" alt="Doge bailasdo" width="200px">
+            </figure>
+            <audio id="dancin-doge" src="./resources/dacin.mp3"></audio>
+            <span id="volume">
+                <i class="fas fa-volume-up hidden"></i>
+                <i class="fas fa-volume-mute"></i>
+            </span>
+            <p>Toca el icono de sonido</p>
+            <p>Aquí estara mi protafolio muy pronto.</p>
+        </section> 
     </main>
-    <footer>
-        <section></section>
-        <section></section>
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+              <div class="col-12 col-lg">
+                <a href="https://www.linkedin.com/in/andoni-barba-noe-894460184/" target="_blank">Linkedin</a>
+              </div>
+              <div class="col-12 col-lg">
+                <a href="https://github.com/Andonny1up">Github</a>
+              </div>
+              <div class="col-12 col-lg">
+                <a href="#">Contacto</a>
+              </div>
+              <div class="col-12 col-lg">
+                <a href="#">Terminos y condiciones</a>
+              </div>
+              <div class="col-12 col-lg">
+                <a href="#">Privacidad</a>
+              </div>
+            </div>
+          </div>
     </footer>
+    <!-- script dancing doge -->
+    <script src="./JavaScript/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
